@@ -1,4 +1,4 @@
-package com.its.blockdev;
+package com.its.blockdev.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import com.its.blockdev.R;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -35,8 +37,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 if(username.equals("dara") && password.equals("123")){
                     Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(intent);
-                }else{
+                    startActivity(intent); }
+                else{
                     Toast.makeText(LoginActivity.this,"Username and Password Incorrect!",Toast.LENGTH_LONG).show();
                 }
 
